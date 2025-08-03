@@ -315,24 +315,24 @@ body class="container">
         
       <button onclick="entrarSite()">Entrar</button>
     </div>
-</div>
     
-  <!-- Botão Entrar -->
-    <button onclick="entrarSite()">Entrar</button>
+  !-- CONTEÚDO PRINCIPAL (SEGUNDA TELA) -->
+  <div id="conteudo">
+    <h1>Bem-vindo ao nosso site romântico 💖</h1>
+    <p>Aqui vai o conteúdo principal depois que o botão for clicado.</p>
   </div>
 
-  <!-- Tela da cartinha escondida inicialmente -->
-  <div id="conteudo" style="display:none;">
-    <!-- Cole aqui o código da sua cartinha -->
-  </div>
-
-  <script src="main.js"></script>
+  <!-- JS PARA TROCA DE TELA -->
   <script>
-    function entrarSite() {
-      document.getElementById('intro').style.display = 'none';
-      document.getElementById('conteudo').style.display = 'block';
-    }
+    const btn = document.getElementById('btnEnter');
+    const intro = document.getElementById('intro');
+    const conteudo = document.getElementById('conteudo');
+
+    btn.addEventListener('click', () => {
+      intro.style.display = 'none';
+      conteudo.style.display = 'block';
+    });
   </script>
+
 </body>
 </html>
-
