@@ -68,3 +68,52 @@ body{
         font-size: .5rem;
     }
 }
+/* Garantir que body ocupe toda a altura e remova margens */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffe6f0; /* cor de fundo da tela inicial */
+  overflow-x: hidden; /* evita barra horizontal */
+}
+
+/* Tela inicial e tela da cartinha ocupam toda a tela */
+#intro, #conteudo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Tela do conteúdo começa escondida */
+#conteudo {
+  display: none;
+  background: white; /* fundo branco para a cartinha */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* caso o conteúdo seja maior que a tela */
+}
+
+/* Botão estilizado */
+button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  color: #a9006e;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
