@@ -98,22 +98,22 @@ body, html {
   overflow-y: auto; /* caso o conteúdo seja maior que a tela */
 }
 
-/* Botão estilizado */
-button {
-  margin-top: 20px;
-  padding: 15px 40px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: white;
-  color: #a9006e;
+.botao-entrar {
+  background-color: #FFB6C1;  /* Rosa claro */
+  color: #000000;             /* Texto preto */
+  font-size: 24px;            /* Letra maior */
+  padding: 18px 40px;         /* Botão maior */
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 0px;                   /* MAIS PRA CIMA */
+  margin-top: 20px;           /* Pequeno espaço acima */
 }
 
-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-    }
+/* Efeito ao passar o mouse */
+.botao-entrar:hover {
+  background-color: #f9a8c0; /* Rosa um pouco mais escuro no hover */
+  transform: scale(1.08);
+}
