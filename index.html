@@ -306,8 +306,21 @@
           <div class="leaf leaf--3"></div>
         </div>
       </div>
-    </div>
-    <script src="main.js"></script>
-  </body>
- </html>
+  <!-- Botão Entrar -->
+    <button onclick="entrarSite()">Entrar</button>
+  </div>
 
+  <!-- Tela da cartinha escondida inicialmente -->
+  <div id="conteudo" style="display:none;">
+    <!-- Cole aqui o código da sua cartinha -->
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    function entrarSite() {
+      document.getElementById('intro').style.display = 'none';
+      document.getElementById('conteudo').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
